@@ -1,6 +1,46 @@
 * Record commands I used to originally setup repo
 <2023-09-12 Tue 18:35>: Here are the commands I used to setup this repo:
 #+begin_src bash
+sam@devstation ~/hub/repos $ npx create-next-app next-js-shop
+Need to install the following packages:
+  create-next-app
+Ok to proceed? (y) y
+✔ Would you like to use TypeScript? … No / Yes
+✔ Would you like to use ESLint? … No / Yes
+✔ Would you like to use Tailwind CSS? … No / Yes
+✔ Would you like to use `src/` directory? … No / Yes
+✔ Would you like to use App Router? (recommended) … No / Yes
+✔ Would you like to customize the default import alias? … No / Yes
+Creating a new Next.js app in /home/sam/hub/repos/next-js-shop.
 
+Using npm.
+
+Initializing project with template: app-tw
+
+
+Installing dependencies:
+- react
+- react-dom
+- next
+- typescript
+- @types/react
+- @types/node
+- @types/react-dom
+- tailwindcss
+- postcss
+- autoprefixer
+- eslint
+- eslint-config-next
+
+
+added 329 packages, and audited 330 packages in 15s
+
+117 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+Initialized a git repository.
+
+Success! Created next-js-shop at /home/sam/hub/repos/next-js-shop
 #+end_src
 * COMPLETED
