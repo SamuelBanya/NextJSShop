@@ -1,0 +1,6 @@
+* Record commands I used to originally setup repo
+<2023-09-12 Tue 18:35>: Here are the commands I used to setup this repo:
+#+begin_src bash
+
+#+end_src
+* COMPLETED
