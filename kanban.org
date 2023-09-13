@@ -43,4 +43,64 @@ Initialized a git repository.
 
 Success! Created next-js-shop at /home/sam/hub/repos/next-js-shop
 #+end_src
+
+<2023-09-12 Tue 19:05>: Here are the commands I used to install Tailwind CSS dependencies to the project:
+#+begin_src bash
+sam@devstation ~/hub/repos/NextJSShop $ npm install --save-dev tailwindcss postcss autoprefixer
+npm WARN idealTree Removing dependencies.tailwindcss in favor of devDependencies.tailwindcss
+npm WARN idealTree Removing dependencies.postcss in favor of devDependencies.postcss
+npm WARN idealTree Removing dependencies.autoprefixer in favor of devDependencies.autoprefixer
+
+up to date, audited 330 packages in 911ms
+
+117 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+#+end_src
+
+<2023-09-12 Tue 19:07>: Here is the command I used to initialize the Tailwind CSS config files:
+#+begin_src bash
+sam@devstation ~/hub/repos/NextJSShop $ npx tailwindcss init -p
+
+Created Tailwind CSS config file: tailwind.config.js
+Created PostCSS config file: postcss.config.js
+#+end_src
+
+After looking in the 'Questions' section for the lecture, I then used the 'content' option in the config file so that it now looks like this:
+#+begin_src bash
+import type { Config } from 'tailwindcss'
+
+const config: Config = {
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/**/*.{js,ts,jsx,tsx}'
+  ],
+  theme: {
+    extend: {
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-conic':
+          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      },
+    },
+  },
+  plugins: [],
+}
+export default config
+#+end_src
+
+<2023-09-12 Tue 19:15>: I then followed Step '4.' from the related link (), by adding the following to the 'globals.css' file:
+#+begin_src css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+#+end_src
+
+* Record course progress
+<2023-09-12 Tue 19:19>: Continue here:
+- https://onestaff.udemy.com/course/nextjs-by-example/learn/lecture/27579044#questions/17490942
+
 * COMPLETED
