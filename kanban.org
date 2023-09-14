@@ -5,6 +5,133 @@
 <2023-09-13 Wed 20:04>: I used this GitHub page as a reference since this author doesn't even bother to do the entire course in Typescript, yet everyone knows that you should be using Typescript with NextJS as a standard these days for modern web dev projects --> Annoying workaround, but at least its there:
 - https://github.com/mirkonasato/next-shop/commit/4b5101715946d6ed858f7d7c6c47b0519a72e4b4
 
+<2023-09-13 Wed 20:44>: So this guy didn't even update this course to include the latest Strapi version, which is important because I'm getting these errors when deploying the example backend (not that it completely relates to this frontend repo, but is definitely worth mentioning):
+#+begin_src bash
+sam@devstation ~/hub/repos/NextJSShopBackend $ npm install
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: '@casl/ability@4.1.6',
+npm WARN EBADENGINE   required: { npm: '^6.0.0' },
+npm WARN EBADENGINE   current: { node: 'v18.0.0', npm: '8.6.0' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'strapi@3.6.11',
+npm WARN EBADENGINE   required: { node: '>=10.16.0 <=14.x.x', npm: '>=6.0.0' },
+npm WARN EBADENGINE   current: { node: 'v18.0.0', npm: '8.6.0' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'strapi-admin@3.6.11',
+npm WARN EBADENGINE   required: { node: '>=10.16.0 <=14.x.x', npm: '>=6.0.0' },
+npm WARN EBADENGINE   current: { node: 'v18.0.0', npm: '8.6.0' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'strapi-connector-bookshelf@3.6.11',
+npm WARN EBADENGINE   required: { node: '>=10.16.0 <=14.x.x', npm: '>=6.0.0' },
+npm WARN EBADENGINE   current: { node: 'v18.0.0', npm: '8.6.0' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'strapi-database@3.6.11',
+npm WARN EBADENGINE   required: { node: '>=10.16.0 <=14.x.x', npm: '>=6.0.0' },
+npm WARN EBADENGINE   current: { node: 'v18.0.0', npm: '8.6.0' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'strapi-generate@3.6.11',
+npm WARN EBADENGINE   required: { node: '>=10.16.0 <=14.x.x', npm: '>=6.0.0' },
+npm WARN EBADENGINE   current: { node: 'v18.0.0', npm: '8.6.0' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'strapi-generate-api@3.6.11',
+npm WARN EBADENGINE   required: { node: '>=10.16.0 <=14.x.x', npm: '>=6.0.0' },
+npm WARN EBADENGINE   current: { node: 'v18.0.0', npm: '8.6.0' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'strapi-generate-controller@3.6.11',
+npm WARN EBADENGINE   required: { node: '>=10.16.0 <=14.x.x', npm: '>=6.0.0' },
+npm WARN EBADENGINE   current: { node: 'v18.0.0', npm: '8.6.0' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'strapi-generate-model@3.6.11',
+npm WARN EBADENGINE   required: { node: '>=10.16.0 <=14.x.x', npm: '>=6.0.0' },
+npm WARN EBADENGINE   current: { node: 'v18.0.0', npm: '8.6.0' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'strapi-generate-new@3.6.11',
+npm WARN EBADENGINE   required: { node: '>=10.16.0 <=14.x.x', npm: '>=6.0.0' },
+npm WARN EBADENGINE   current: { node: 'v18.0.0', npm: '8.6.0' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'strapi-generate-plugin@3.6.11',
+npm WARN EBADENGINE   required: { node: '>=10.16.0 <=14.x.x', npm: '>=6.0.0' },
+npm WARN EBADENGINE   current: { node: 'v18.0.0', npm: '8.6.0' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'strapi-generate-policy@3.6.11',
+npm WARN EBADENGINE   required: { node: '>=10.16.0 <=14.x.x', npm: '>=6.0.0' },
+npm WARN EBADENGINE   current: { node: 'v18.0.0', npm: '8.6.0' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'strapi-generate-service@3.6.11',
+npm WARN EBADENGINE   required: { node: '>=10.16.0 <=14.x.x', npm: '>=6.0.0' },
+npm WARN EBADENGINE   current: { node: 'v18.0.0', npm: '8.6.0' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'strapi-helper-plugin@3.6.11',
+npm WARN EBADENGINE   required: { node: '>=10.16.0 <=14.x.x', npm: '>=6.0.0' },
+npm WARN EBADENGINE   current: { node: 'v18.0.0', npm: '8.6.0' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'strapi-plugin-content-manager@3.6.11',
+npm WARN EBADENGINE   required: { node: '>=10.16.0 <=14.x.x', npm: '>=6.0.0' },
+npm WARN EBADENGINE   current: { node: 'v18.0.0', npm: '8.6.0' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'strapi-plugin-content-type-builder@3.6.11',
+npm WARN EBADENGINE   required: { node: '>=10.16.0 <=14.x.x', npm: '>=6.0.0' },
+npm WARN EBADENGINE   current: { node: 'v18.0.0', npm: '8.6.0' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'strapi-plugin-email@3.6.11',
+npm WARN EBADENGINE   required: { node: '>=10.16.0 <=14.x.x', npm: '>=6.0.0' },
+npm WARN EBADENGINE   current: { node: 'v18.0.0', npm: '8.6.0' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'strapi-plugin-i18n@3.6.11',
+npm WARN EBADENGINE   required: { node: '>=10.16.0 <=14.x.x', npm: '>=6.0.0' },
+npm WARN EBADENGINE   current: { node: 'v18.0.0', npm: '8.6.0' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'strapi-plugin-upload@3.6.11',
+npm WARN EBADENGINE   required: { node: '>=10.16.0 <=14.x.x', npm: '>=6.0.0' },
+npm WARN EBADENGINE   current: { node: 'v18.0.0', npm: '8.6.0' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'strapi-plugin-users-permissions@3.6.11',
+npm WARN EBADENGINE   required: { node: '>=10.16.0 <=14.x.x', npm: '>=6.0.0' },
+npm WARN EBADENGINE   current: { node: 'v18.0.0', npm: '8.6.0' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'strapi-provider-email-sendmail@3.6.11',
+npm WARN EBADENGINE   required: { node: '>=10.16.0 <=14.x.x', npm: '>=6.0.0' },
+npm WARN EBADENGINE   current: { node: 'v18.0.0', npm: '8.6.0' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'strapi-provider-upload-local@3.6.11',
+npm WARN EBADENGINE   required: { node: '>=10.16.0 <=14.x.x', npm: '>=6.0.0' },
+npm WARN EBADENGINE   current: { node: 'v18.0.0', npm: '8.6.0' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'strapi-utils@3.6.11',
+npm WARN EBADENGINE   required: { node: '>=10.16.0 <=14.x.x', npm: '>=6.0.0' },
+npm WARN EBADENGINE   current: { node: 'v18.0.0', npm: '8.6.0' }
+npm WARN EBADENGINE }
+#+end_src
+
+What I might have to do is to literally really the SQLite database entries with 'sqlite3', and dump them onto the pages config themselves somehow, or at least just install 'Strapi 4.0' to just be able to utilize the Strapi project's sqlite database accordingly.
+
+I'll have to debate on that one honestly.
+
+<2023-09-13 Wed 20:47>: After I deal with the jenk workflow above, I will try to continue here, though hopefully I won't just have to skim, assume, and MAYBE try this out with an actual project though I honestly only think this headless CMS idea would only work if you needed a Project Manager or someone 50% technical to be able to manage the backend without having to know everything about being a backend dev:
+- https://onestaff.udemy.com/course/nextjs-by-example/learn/lecture/27185968#questions
+
 * COMPLETED
 ** DONE Record commands I used to originally setup repo
 <2023-09-12 Tue 18:35>: Here are the commands I used to setup this repo:
