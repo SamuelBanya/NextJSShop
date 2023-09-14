@@ -1,4 +1,12 @@
-* Record commands I used to originally setup repo
+* Record course progress
+<2023-09-12 Tue 19:19>: Continue here:
+- https://onestaff.udemy.com/course/nextjs-by-example/learn/lecture/27579044#questions/17490942
+
+<2023-09-13 Wed 20:04>: I used this GitHub page as a reference since this author doesn't even bother to do the entire course in Typescript, yet everyone knows that you should be using Typescript with NextJS as a standard these days for modern web dev projects --> Annoying workaround, but at least its there:
+- https://github.com/mirkonasato/next-shop/commit/4b5101715946d6ed858f7d7c6c47b0519a72e4b4
+
+* COMPLETED
+** DONE Record commands I used to originally setup repo
 <2023-09-12 Tue 18:35>: Here are the commands I used to setup this repo:
 #+begin_src bash
 sam@devstation ~/hub/repos $ npx create-next-app next-js-shop
@@ -98,9 +106,3 @@ export default config
 @tailwind components;
 @tailwind utilities;
 #+end_src
-
-* Record course progress
-<2023-09-12 Tue 19:19>: Continue here:
-- https://onestaff.udemy.com/course/nextjs-by-example/learn/lecture/27579044#questions/17490942
-
-* COMPLETED
